@@ -428,7 +428,7 @@ class Hello(object):
     ctx.rotate(pi)
     # put it back
     ctx.translate(-820,-820)
-    spur.Spur(ctx).Gear(820,820,rp_g1,n_g1, pa, "blue")
+    spur.Spur(ctx).Gear(820,820,rp_g1,n_g1, pa, "green")
     ctx.restore()
 
     # 將第2齒輪逆時鐘轉 90 度之後, 再多轉一齒, 以便與第1齒輪進行囓合
@@ -439,7 +439,7 @@ class Hello(object):
     ctx.rotate(-pi/n_g2)
     # put it back
     ctx.translate(-820,-(820+rp_g1+rp_g2))
-    spur.Spur(ctx).Gear(820,820+rp_g1+rp_g2,rp_g2,n_g2, pa, "black")
+    spur.Spur(ctx).Gear(820,820+rp_g1+rp_g2,rp_g2,n_g2, pa, "red")
     ctx.restore()
 
 
